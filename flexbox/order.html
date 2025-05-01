@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+.flex-container {
+  display: flex;
+  align-items: stretch; /* change the value to center or flex-start (default) or stretch, baseline */
+  background-color: tomato;
+}
+.flex-container > .vision {
+  background-color:purple;
+  color: white;
+ }
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<h1> order property of flex items</h1>
+<div class="flex-container">
+  <div style="order: 3;">ATC</div>
+  <div class="vision" style="order: 2;">Vision</div>
+  <div style="order: 1;">College</div>  
+</div>
+</body>
+</html>
+
+
