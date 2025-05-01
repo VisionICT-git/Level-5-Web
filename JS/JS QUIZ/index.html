@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <main>
+        <header class="bg-danger" style="background-color: #ffbb00; text-align: center; padding: 5px;">
+            <h1>COVID 19 QUIZ</h1></header>
+        <!--Container includes the --Login in text and a login Modal-->
+        <div class="container">
+            <div id="login">
+                <!--Add a button to trigger (Modal)-->
+                <h2 style="color: purple;">Ready to play Click Below</h2>
+            <button type="button" class="btn btn-info btn-lg" style="background-color: purple;" data-toggle="modal" data-target="#myModal">Play Quiz</button>
+            </div>
+            <!--Add a login form (Modal)-->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+        <!-- Login Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Join Quiz</h4>
+              </div>
+              <div class="modal-body">
+               <!--Put your login contain here-->
+               <form>
+                <!-- USER NAME -->
+                <div class="form-group">
+                  <label for="username">Name:</label>
+                  <input id="username" name="username" type="text" placeholder="Enter User Name" class="form-control">
+                  <span class="label label-default span">Please enter a user name</span>
+                </div>
+                <!-- PASSWORD -->
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input id="password" name="password" type="password" class="form-control" placeholder="Enter Password">
+                  <span class="label label-default span">Password must be 6 or more characters</span>
+                </div>
+                <input type="submit" value="Register" id = "submit" class = "submitForm" data-dismiss="modal" class="btn btn-primary" disabled ="true" style="background-color: purple; color: white;">
+              </form>
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+    <!--Login Form Ends Here-->
+    <div id="quiz">
+        <div class="container">
+            <!--Add quiz questions in the form below-->
+            <!--the div class col-sm-12 is a bootstrap class used for the heading-->
+            <div class="col-sm-12" style="background-color: white; color: purple; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                <h1>COVID 19 Quiz Questions</h1>
+                    </div>
+                       <div clas = "col-sm-12" style="background-color: purple; color: white; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 16px; line-height: 30px;">
+                <form action="" id="form1" name="form1">
+                    <p>1. The Omicron variant spreads easier than the original COVID-19 virus</p>
+                    <input type="radio" name="op1" value=" Strongly Disagree"  id=""> Strongly Disagree <br>
+                    <input type="radio" name="op1" value=" Disagree"  id="">Disagree <br>
+                    <input type="radio" name="op1" value=" Neutral"  id=""> Neutral<br>
+                    <input type="radio" name="op1" value=" Agree"  id="">   Agree <br>
+                    <input type="radio" name="op1" value=" Strongly Agree" id=""> Strongly Agree <br><br>
+                    
+                    <p>2. Getting vaccinated and boosted is the best way to protect yourself and others.</p>
+                    <input type="radio" name="op2" value=" Strongly Disagree"  id="">Strongly Disagree <br>
+                    <input type="radio" name="op2" value=" Disagree"  id=""> Disagree <br>
+                    <input type="radio" name="op2" value=" Neutral"  id=""> Neutral<br>
+                    <input type="radio" name="op2" value=" Agree"  id=""> Agree <br>
+                    <input type="radio" name="op2" value=" Strongly Agree" id=""> Strongly Agree <br><br>
+                    
+                    <p>3. The best way to stop the spread of COVID-19 is to isolate at the first sign of symptoms</p>
+                    <input type="radio" name="op3" value=" Strongly Disagree"  id="">Strongly Disagree <br>
+                    <input type="radio" name="op3" value=" Disagree"  id=""> Disagree <br>
+                    <input type="radio" name="op3" value=" Neutral"  id=""> Neutral<br>
+                    <input type="radio" name="op3" value=" Agree"  id=""> Agree <br>
+                    <input type="radio" name="op3" value=" Strongly Agree" id=""> Strongly Agree <br><br>
+                    
+                    <p>4. You have to plan ahead and exercise caution if you intend to travel.</p>
+                    <input type="radio" name="op4" value=" Strongly Disagree"  id="">Strongly Disagree <br>
+                    <input type="radio" name="op4" value=" Disagree"  id=""> Disagree <br>
+                    <input type="radio" name="op4" value=" Neutral"  id=""> Neutral<br>
+                    <input type="radio" name="op4" value=" Agree"  id=""> Agree <br>
+                    <input type="radio" name="op4" value=" Strongly Agree" id=""> Strongly Agree <br><br>
+                    
+                    <p>5. Most accurate COVID test will be on day 5 after exposure.</p>
+                    <input type="radio" name="op5" value=" Strongly Disagree"  id="">Strongly Disagree <br>
+                    <input type="radio" name="op5" value=" Disagree"  id=""> Disagree <br>
+                    <input type="radio" name="op5" value=" Neutral"  id=""> Neutral<br>
+                    <input type="radio" name="op5" value=" Agree"  id=""> Agree <br>
+                    <input type="radio" name="op5" value=" Strongly Agree" id=""> Strongly Agree <br><br>
+                    <!--Add a buttom that will calculate the score and check if all inputs are selected or not using questions.js-->
+                    <button type="button" style="background-color: #ffbb00; color: black;" class="btn btn-success" data-toggle="modal" data-target ="#modalOutput"onclick="calculateScore();" style ="border-radius: 10px;">Get Your Score</button>
+                  </form>
+            </div>    
+    </div>
+    </div>
+    <!--Quiz Questions Ends Here-->
+    <!--Add a Modal for alert messages and Output> -->
+        <!-- Modal for output and alert messages -->
+<div class="modal fade" id="modalOutput" role="dialog">
+  <div class="modal-dialog">
+      <!-- Modal content-->
+    <div id="submit" class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Outcome</h4>
+      </div>
+      <div class="modal-body">
+          <p id="message"></p>
+          <p id="result"></p>
+          <img id="img"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div> 
+  </div>
+</div>
+    
+    <!--Add the Java script file sources-->
+    <script src="login.js"></script> 
+    <script src="questions.js"></script> 
+</main>
+</body>
+</html>
