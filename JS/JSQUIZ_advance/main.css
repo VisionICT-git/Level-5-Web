@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main {
+  background-color: rgb(207, 236, 203);
+  margin: 40px;
+  padding: 10px;
+}
+#answerForm {
+  background-color: rgb(133, 182, 182);
+  margin: 40px;
+  padding: 10px;
+  text-align: left;
+}
+.buttonStyle {
+  padding: 5px;
+  margin: 10px;
+  background-color: rgb(123, 123, 236);
+  font-size: 20px;
+}
+.correct {
+  margin: 10px;
+  color: darkgreen;
+}
+.incorrect {
+  margin: 10px;
+  color: red;
+}
+#result {
+  margin: 30px;
+  color: rgb(30, 16, 223);
+  text-shadow: 1px 1px darkorchid;
+  font-size: 30px;
+}
